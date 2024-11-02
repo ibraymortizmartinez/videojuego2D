@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro para el cuerpo */
+}
+
+#container {
+    position: relative;
+    width: 800px; /* Ancho fijo para el contenedor */
+    height: 600px; /* Altura fija para el contenedor */
+    overflow: hidden; /* Evitar que el canvas sobresalga */
+    border: 2px solid white; /* Opcional: borde para ver el contenedor */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: url('./assets/img/guantes.png'), auto; /* Cambia la ruta a tu imagen de puntero */
+    display: block;
+    margin: 0 auto; /* Centrar el canvas si es necesario */
+}
+
+
+
+#restartButton {
+    position: absolute;
+    bottom: 10px; /* Posición en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar el botón horizontalmente */
+    background-color: #ff0000; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    font-size: 18px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#restartButton:hover {
+    background-color: #cc0000; /* Color de fondo al pasar el ratón */
+}
+
+#instructions {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    color: #000; /* Texto negro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 200px; /* Ancho fijo para las instrucciones */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde la izquierda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    z-index: 10; /* Asegura que esté encima del canvas */
+}
+
+
+
+#instructions h2 {
+    margin: 0 0 10px;
+}
+
+#instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#instructions li {
+    margin: 5px 0;
+}

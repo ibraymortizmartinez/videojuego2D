@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/icono.jpeg">
+    <title>¡Desafío Tarjetazo!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="instructions">
+        <h2>Instrucciones del Juego</h2>
+        <p>
+            Bienvenido a ¡Desafío Tarjetazo! Tu objetivo es hacer clic en los balones y evitar las tarjetas rojas.
+        </p>
+        <p>
+            <strong>Cómo jugar:</strong>
+        </p>
+        <ul>
+            <li>Haz clic en los balones para aumentar tu puntuación.</li>
+            <li>Evita hacer clic en las tarjetas rojas, ya que restarán puntos.</li>
+            <li>El juego tiene un tiempo límite de 30 segundos.</li>
+            <li>Puedes reiniciar el juego haciendo clic en el botón de reiniciar.</li>
+        </ul>
+        <p>
+            ¡Diviértete jugando!
+        </p>
+    </div>
+    
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="score"></div>
+        <div id="timer"></div>
+        <button id="restartButton">REINICIAR</button>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>

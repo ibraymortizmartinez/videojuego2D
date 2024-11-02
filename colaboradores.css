@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color del texto */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar el contenedor */
+}
+
+h1 {
+    text-align: center; /* Centrar el título principal */
+    color: #007BFF; /* Color azul */
+}
+
+.conclusion {
+    margin-bottom: 20px; /* Espaciado entre conclusiones */
+    border-left: 4px solid #007BFF; /* Línea lateral para destacar cada conclusión */
+    padding-left: 10px; /* Espaciado a la izquierda del texto */
+}
+
+h2 {
+    color: #007BFF; /* Color azul para los subtítulos */
+}
+
+p {
+    line-height: 1.6; /* Espaciado entre líneas */
+}

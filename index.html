@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/icono.jpeg">
+    <title>Página de Inicio</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(assets/img/fondo.jpeg);
+            background-size: cover; 
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .button {
+            display: block;
+            margin: 10px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff4b2b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff7f50;
+        }
+        .canvas-opaco {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        .button {
+            display: block;
+            margin: 10px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff4b2b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff7f50;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-opaco">
+        <h1>¡Desafío Tarjetazo!</h1>
+        <button class="button" onclick="iniciarJuego()">JUGAR.</button>
+        <button class="button" onclick="mostrarInstrucciones()">COLABORADORES.</button>
+    </div>
+
+    <script>
+        function iniciarJuego() {
+            window.location.href = "juego.html";
+        }
+
+        function mostrarInstrucciones() {
+            window.location.href = "colaboradores.html";
+        }
+    </script>
+</body>
+</html>
